@@ -28,12 +28,16 @@ body {
   background: var(--lightGrey);
   color: var(--darkHover);
 }
+header {
+  background: #09712c;
+  padding: 0.2rem 0 0.05rem 0;
+}
 
 .container {
   width: 100%;
   max-width: 25rem;
   margin: 5rem auto 5rem auto;
-  border: 1px Var(--darkHover) solid;
+  border: 1px Var(--yaGreen) solid;
 }
 
 /* Top bar styling starts here */
@@ -44,36 +48,51 @@ body {
   justify-content: space-between;
 }
 .map-pin i {
-  font-size: 42px;
-  margin-top: 3px;
+  font-size: 36px;
+  margin-top: 5px;
+  color: white;
 }
 .logo img {
   max-width: 50px;
   height: auto;
 }
-
 main {
   background: #fff;
 }
 
-.search-bar {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
+/* ================================= */
+/* Styling search Bar */
+/* ================================= */
+
+.search-area {
+  display: grid;
+  grid-template-columns: auto 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
   margin: auto;
+  margin-bottom: 0.3rem;
+  border: 1px #09712c solid;
+  border-radius: 0.2rem;
+  background: white;
+}
+input[type="text"] {
+  box-sizing: border-box;
   height: 2rem;
-  border: 1px seagreen solid;
-}
-.search-btn i {
-  width: 20px;
-  background: #4eadf1;
-  justify-items: flex-end;
-}
-#searchfield {
-  min-width: 16rem;
-  max-width: 18rem;
+  min-width: 17rem;
+  width: 100%;
+  padding-left: 0.4rem;
+  font-size: 1rem;
 }
 
+.search-btn i {
+  font-size: 1.5rem;
+  color: #09712c;
+}
+
+/* ================================= */
+/* Styling main section Product Cat */
+/* ================================= */
 .product-category {
   margin: auto;
   padding: 0.5rem;
@@ -81,12 +100,12 @@ main {
   grid-template-rows: repeat(3, 1fr);
   justify-content: space-around;
   grid-gap: 0.3rem;
+  color: white;
+  background: #09712c;
 }
-
 .animated-arrow {
   justify-self: center;
 }
-
 .card {
   width: 100%;
   height: 300px;
@@ -100,4 +119,7 @@ footer {
   height: 40px;
   padding: 10px;
   text-align: center;
+  background: #09712c;
+  color: #fff;
+  text-transform: uppercase;
 }
