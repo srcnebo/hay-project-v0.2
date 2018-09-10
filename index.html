@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -28,15 +31,16 @@
             <div class="search-bar">
                 <form action="#">
                     <div class="search-area">
-                        <input type="text" id="searchfield" placeholder="Search.." name="sfield">
+                        <input type="text" id="searchInput" placeholder="Search.." name="sfield">
                         <a href="
-                            #" class="search-btn">
+                            #" class="search-btn" id="searchBtn">
                             <i class="fas fa-search"></i>
                         </a>
                     </div>
                 </form>
             </div>
         </header>
+        
         <main>
             <div class="product-category container">
                 <h2>Product Category</h2>
@@ -45,18 +49,51 @@
                     <i class="fa fa-angle-double-down"></i>
                 </div>
             </div>
-            <div class="dynamic">
-                <div class="card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate veniam perferendis
-                        reprehenderit
-                        explicabo dolores placeat minus cum quo, quaerat modi accusantium maiores dolorem corrupti quas
-                        voluptas
-                        repellendus dicta.</p>
-                </div>
+
+            <div class="dynamic swiper-container">
+            	<div class="swiper-wrapper">
+
+	                <div class="card swiper-slide">
+		                <div class="card-body">
+		                  <h4 class="card-title" id='firstTitle'></h4>
+		                  <p>Some example text. Some example text.</p>
+		                  <div class="form-group">
+		                     <select class="form-control" id='firstSelect'>
+		                    </select>
+		                 </div>
+	                	</div>
+	                </div>
+
+	                <div class="card swiper-slide">
+	                   <div class="card-body">
+		                  <h4 class="card-title" id='secondTitle'></h4>
+		                  <p>Some example text. Some example text.</p>
+		                  <div class="form-group">
+		                     <select class="form-control" id='secondSelect'> 
+		                    </select>
+		                  </div>
+		               </div>
+	                </div>
+
+	                <div class="card swiper-slide">
+	                    <div class="card-body">
+		                  <h4 class="card-title" id='thirdTitle'></h4>
+		                  <p>Some example text. Some example text.</p>
+		                  <div class="form-group">
+		                     <select class="form-control" id='thirdSelect'>
+		                    </select>
+		                  </div>
+		               </div>
+	                </div>
+
+            	</div>
+            	<div class="swiper-pagination"></div>
+
             </div>
+            
         </main>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.js"></script>
 </body>
 
 </html>
