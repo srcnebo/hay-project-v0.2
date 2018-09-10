@@ -99,6 +99,11 @@ input[type="text"] {
   border-left-width: 0px;
 }
 
+select{
+  height: 3rem;
+  width: 70vw;
+}
+
 .search-btn i {
   font-size: 1.5rem;
   color: #09712c;
