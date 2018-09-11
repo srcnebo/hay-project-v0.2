@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -24,23 +24,23 @@ html {
 body {
   /* font-family: 'Exo', sans-serif; font-family: 'Montserrat', sans-serif;  */
   font-size: 1rem;
-  background: var(--yaGreen);
+  /* background: var(--yaGreen); */
   color: var(--darkHover);
 }
+
 header {
-  background: #09712c;
+  background: linear-gradient(to bottom, #09712c, #09712c, #f0f0f0);
   padding: 0.2rem 0 0.05rem 0;
 }
-
-main {
-  background: #09712c;
+.product-category p {
+  text-align: center;
 }
 
 .maincontainer {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   border: 1px Var(--yaGreen) solid;
-  background-color: #09712c;
+  background-color: #f0f0f0;
 }
 
 /* Top bar styling starts here */
@@ -60,7 +60,7 @@ main {
   height: auto;
 }
 
-.dynamic{
+.dynamic {
   padding-right: 30px;
   padding-left: 30px;
   background: #09712c;
@@ -80,13 +80,13 @@ main {
   border-bottom-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
-  margin-top: 1.0rem;
-  margin-bottom: 1.0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border: 1px #09712c solid;
   border-radius: 0.2rem;
   background: white;
 }
-input[type="text"] {
+input[type='text'] {
   box-sizing: border-box;
   height: 3rem;
   min-width: 17rem;
@@ -99,7 +99,7 @@ input[type="text"] {
   border-left-width: 0px;
 }
 
-select{
+select {
   height: 3rem;
   width: 70vw;
 }
@@ -119,8 +119,8 @@ select{
   grid-template-rows: repeat(3, 1fr);
   justify-content: space-around;
   grid-gap: 0.5rem;
-  color: white;
-  background: #09712c;
+  color: #444;
+  background: #f0f0f0;
 }
 .animated-arrow {
   justify-self: center;
@@ -129,7 +129,6 @@ select{
   width: 40vh;
   height: 40vh;
   margin: auto;
-  border: 1px solid;
   padding-top: 60px;
   text-align: center;
   background-color: #f0f0f0;
@@ -138,9 +137,18 @@ select{
 .swiper-container {
   width: 80vw;
   height: 40vh;
-  background-color: #09712c;
+  background-color: #f0f0f0;
+  border: 0;
 }
-
+.swiper-pagination-progressbar {
+  background: #fff !important;
+}
+.swiper-pagination-progressbar-fill {
+  background: var(--yaGreen) !important ;
+}
+.card-title {
+  margin: 1rem !important;
+}
 /* ================================= */
 /* Styling main footer section */
 /* ================================= */
